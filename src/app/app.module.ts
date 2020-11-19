@@ -18,6 +18,8 @@ import { IslamComponent } from './islam/islam.component';
 import { BuddhismComponent } from './buddhism/buddhism.component';
 import { SummaryComponent } from './summary/summary.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { SourcesCardComponent } from './sources-card/sources-card.component';
+import { MapCardComponent } from './map-card/map-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { StepperComponent } from './stepper/stepper.component';
     IslamComponent,
     BuddhismComponent,
     SummaryComponent,
-    StepperComponent
+    StepperComponent,
+    SourcesCardComponent,
+    MapCardComponent
   ],
   imports: [
     CommonModule,

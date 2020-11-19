@@ -10,6 +10,7 @@ export const TOTAL_RELIGIONS: ReligionName[] = ['christianity', 'islam', 'buddhi
 })
 export class StoryService {
   public seenReligions: ReligionName[] = [];
+  public seenSummaryComplete = false;
 
   seenAll = (): boolean => TOTAL_RELIGIONS.length === this.seenReligions.length;
   findDiff = (): ReligionName[] => TOTAL_RELIGIONS.filter(x => !this.seenReligions.includes(x));
@@ -19,5 +20,9 @@ export class StoryService {
     this.seenReligions = this.seenReligions.filter(Utils.onlyUnique);
 
     console.log('seen religions: ', this.seenReligions);
+  }
+
+  viewSummary = (): void => {
+    this.seenSummaryComplete = this.seenAll();
   }
 }

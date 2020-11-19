@@ -6,3 +6,20 @@
 
   padding-top: 5vh;
 }
+
+.secondary-page-header {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.religion-content {
+  padding-bottom: 10vh;
+
+  & .secondary-page-header:not(:first-of-type) {
+    padding-top: 2vh;
+  }
+}
+
+.note-cards mdb-card,app-sources-card,app-map-card:not(:first-of-type) {
+  margin-top: 5vh;
+}

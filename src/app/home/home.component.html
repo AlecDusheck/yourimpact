@@ -40,17 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <mdb-card>
-      <div class="view rgba-white-slight waves-light" mdbWavesEffect>
-      <mdb-card-body>
-        <agm-map [mapDraggable]="false" [disableDefaultUI]="true" [latitude]="34" [longitude]="40" [zoom]="2" (zoomChange)="log($event)" (centerChange)="log($event)">
-          <ng-container *ngFor="let marker of mapMarkers">
-            <agm-marker [latitude]="marker.lat" [longitude]="marker.long" [label]="marker.label"></agm-marker>
-          </ng-container>
-        </agm-map>
-      </mdb-card-body>
-      </div>
-    </mdb-card>
+  <div class="map-box">
+    <app-map-card [mapMarkers]="mapMarkers"></app-map-card>
   </div>
 </div>

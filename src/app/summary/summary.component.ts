@@ -14,6 +14,7 @@ export class SummaryComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.storyService.viewSummary();
   }
 
   getDiffAsString = () => this.storyService.findDiff().map(x => Utils.capitalize(x)).join(', ');

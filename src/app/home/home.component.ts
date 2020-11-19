@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SimpleCardProps} from '../simple-card/simple-card.component';
-
-export interface MapMarker {
-  lat: number;
-  long: number;
-  label: string;
-}
+import {MapMarker} from '../../util';
 
 @Component({
   selector: 'app-home',

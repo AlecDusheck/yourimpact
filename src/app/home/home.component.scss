@@ -8,22 +8,8 @@
 
 .map {
   margin-bottom: 10vh;
-  mdb-card {
-    width: 100%;
+
+  .map-container {
     height: 40vh;
-
-    .view {
-      height: 100%;
-
-      mdb-card-body {
-        height: 100%;
-        padding: 0;
-
-        agm-map {
-          height: 100%;
-          width: 100%;
-        }
-      }
-    }
   }
 }

@@ -2,13 +2,19 @@
   <div class="col-md-12">
     <ul class="stepper stepper-horizontal">
       <ng-container *ngFor="let religion of religions">
-        <li [ngClass]="{completed: hasSeen(religion), warning: !hasSeen(religion)}">
+        <li [ngClass]="{completed: hasSeen(religion)}">
           <a [routerLink]="'/' + religion">
             <span class="circle">{{ findIndex(religion) }}</span>
             <span class="label">{{ capitalize(religion) }}</span>
           </a>
         </li>
       </ng-container>
+      <li [ngClass]="{warning: !storyService.seenAll(), completed: storyService.seenSummaryComplete}">
+        <a routerLink="/summary">
+          <span class="circle">{{ TOTAL_RELIGIONS.length + 1 }}</span>
+          <span class="label">Summary</span>
+        </a>
+      </li>
     </ul>
   </div>
 </div>

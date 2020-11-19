@@ -1,0 +1,12 @@
+<mdb-card *ngIf="mapMarkers">
+  <mdb-card-body>
+    <mdb-card-title *ngIf="title">
+      <h4>Where did the core events take place?</h4>
+    </mdb-card-title>
+    <agm-map [mapDraggable]="false" [disableDefaultUI]="true" [latitude]="getDefaultLat()" [longitude]="getDefaultLong()" [zoom]="2" [ngClass]="{'title-sized': title}">
+      <ng-container *ngFor="let marker of mapMarkers">
+        <agm-marker [latitude]="marker.lat" [longitude]="marker.long" [label]="marker.label"></agm-marker>
+      </ng-container>
+    </agm-map>
+  </mdb-card-body>
+</mdb-card>
