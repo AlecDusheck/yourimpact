@@ -12,6 +12,12 @@ import { HomeComponent } from './home/home.component';
 import { SimpleCardComponent } from './simple-card/simple-card.component';
 import {AgmCoreModule} from '@agm/core';
 import {environment} from '../environments/environment';
+import { ChristianityComponent } from './christianity/christianity.component';
+import {CommonModule} from '@angular/common';
+import { IslamComponent } from './islam/islam.component';
+import { BuddhismComponent } from './buddhism/buddhism.component';
+import { SummaryComponent } from './summary/summary.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +26,15 @@ import {environment} from '../environments/environment';
     FooterComponent,
     WorksCitedComponent,
     HomeComponent,
-    SimpleCardComponent
+    SimpleCardComponent,
+    ChristianityComponent,
+    IslamComponent,
+    BuddhismComponent,
+    SummaryComponent,
+    StepperComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),

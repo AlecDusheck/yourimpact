@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 class="primary-page-header">Conclusion</h2>
+  <app-stepper></app-stepper>
+  <ng-container>
+
+  </ng-container>
+  <ng-container *ngIf="!storyService.seenAll()">
+    <mdb-card>
+      <mdb-card-body>
+        <mdb-card-title>
+          <h4>You're not ready yet!</h4>
+        </mdb-card-title>
+        <mdb-card-text>
+          Please independently explore <b>{{ getDiffAsString() }}</b> before skipping to the conclusion!
+        </mdb-card-text>
+
+        <a routerLink="/" mdbBtn color="primary" mdbWavesEffect>Go Back</a>
+      </mdb-card-body>
+    </mdb-card>
+  </ng-container>
+</div>

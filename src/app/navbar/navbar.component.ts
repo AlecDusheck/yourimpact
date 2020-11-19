@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {filter} from 'rxjs/operators';
+import {TOTAL_RELIGIONS} from '../story.service';
+import {Utils} from '../../util';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
-  constructor() { }
+  public religions = TOTAL_RELIGIONS;
+  public route = '';
 
-  ngOnInit(): void {
+  constructor(
+    private readonly router: Router,
+  ) {
+    router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    )
+      .subscribe((event: NavigationEnd) => this.route = event.url);
   }
 
+  public capitalize = Utils.capitalize;
 }
