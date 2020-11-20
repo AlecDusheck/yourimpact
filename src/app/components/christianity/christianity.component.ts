@@ -10,16 +10,16 @@ import {MapMarker} from '../shared/map-card/map-card.component';
 export class ChristianityComponent implements OnInit {
 
   mapMarkers: MapMarker[];
-  sources = ['Religion in the Ancient World'];
+  sources = ['The Holy Bible', 'St. Paul the Apostle', 'The Early Church', 'Church and State Through the Centuries: A Collection of Historic Documents'];
 
   constructor(
     private readonly storyService: StoryService,
   ) {
     this.mapMarkers = [
       {
-        label: 'Christianity',
-        lat: 31.779400,
-        long: 35.232071,
+        label: 'Rome',
+        lat: 41.9028,
+        long: 12.4964,
       }
     ];
   }

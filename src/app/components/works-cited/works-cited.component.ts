@@ -15,6 +15,7 @@ export interface WorksCited {
   date?: string;
   dateAccessed: string;
   link?: string;
+  annotation: string;
 }
 
 export const WORKS_CITED: WorksCited[] = [
@@ -25,9 +26,52 @@ export const WORKS_CITED: WorksCited[] = [
     publication: 'Ancient History Encyclopedia',
     date: '23 Mar 2018',
     dateAccessed: '10 Nov 2020',
-    link: 'https://www.ancient.eu/religion/'
+    link: 'https://www.ancient.eu/religion/',
+    annotation: 'This source explains the very early bases for religion and the fundamentals behind it. I believe this will be useful for the landing page of the website and background information not specific to the website.',
   },
   {
+    sourceType: SourceType.ACADEMIC,
+    author: 'Sanders, E.P',
+    title: 'St. Paul the Apostle',
+    publication: 'Britannica',
+    dateAccessed: '19 Nov 2020',
+    link: 'https://www.britannica.com/biography/Saint-Paul-the-Apostle',
+    annotation: 'Gives background on Paul and how he spread Christianity to the Roman empire.',
+  },
+  {
+    sourceType: SourceType.ACADEMIC,
+    author: 'Frend, W.H.C',
+    title: 'The Early Church',
+    publication: 'Fortress Press',
+    date: '1965',
+    dateAccessed: '19 Nov 2020',
+    link: 'https://books.google.com/books?id=BFdslPRjIkcC',
+    annotation: 'Explains how the Romans prosecuted Christians in their early days. Puts early hostility into contrast.',
+  },
+  {
+    sourceType: SourceType.PRIMARY,
+    link: 'https://books.google.com/books?id=2WuMyEzani8C',
+    title: 'Church and State Through the Centuries: A Collection of Historic Documents',
+    dateAccessed: '19 Nov 2020',
+    annotation: 'Source material that shows the adoption of Christianity in the Roman Empire'
+  },
+  {
+    sourceType: SourceType.IMAGE,
+    link: 'https://www.theguardian.com/commentisfree/2013/jul/02/religion-wars-conflict',
+    title: 'A crusader is shot by a Muslim warrior during the Crusades in c1250',
+    dateAccessed: '19 Nov 2020',
+    publication: 'Hulton Archive/Getty',
+    annotation: 'Islam Crusade image for home screen depicting war'
+  },
+  {
+    sourceType: SourceType.IMAGE,
+    link: 'https://www.thoughtco.com/along-the-silk-road-167077',
+    title: 'Image of silk road',
+    dateAccessed: '18 Nov 2020',
+    publication: 'Corbis / Getty Image',
+    annotation: 'Image of the silk road for home screen depicting trade',
+  },
+  /*{
     sourceType: SourceType.ACADEMIC,
     author: 'Rod-ari, Melody',
     title: 'Hinduism and Buddhism, an introduction',
@@ -35,8 +79,8 @@ export const WORKS_CITED: WorksCited[] = [
     date: '24 Jan 2018',
     dateAccessed: '10 Nov 2020',
     link: 'https://smarthistory.org/introduction-to-buddhism/'
-  },
-  {
+  },*/
+  /*{
     sourceType: SourceType.PRIMARY,
     author: 'Cartweight, Mark',
     title: 'The Spread of Islam in Africa',
@@ -44,6 +88,14 @@ export const WORKS_CITED: WorksCited[] = [
     date: '2019',
     dateAccessed: '10 Nov 2020',
     link: 'https://www.ancient.eu/img/r/p/500x600/10601.jpg.avif?v=1603466144'
+  },*/
+  {
+    sourceType: SourceType.PRIMARY,
+    title: 'The Holy Bible',
+    publication: 'BibleHub',
+    dateAccessed: '20 Nov 2020',
+    link: 'https://biblehub.com/romans/1-1.htm',
+    annotation: 'The bible shows Paul, an Apostle, telling the first-century world about Christianity and Jesus.',
   },
   {
     sourceType: SourceType.IMAGE,
@@ -51,7 +103,8 @@ export const WORKS_CITED: WorksCited[] = [
     title: 'Rock going into water',
     publication: 'Unsplash',
     dateAccessed: '15 Nov 2020',
-    link: 'https://unsplash.com/photos/I79JezfrbLk'
+    link: 'https://unsplash.com/photos/I79JezfrbLk',
+    annotation: 'A "ripple" representing the spread of something.',
   }
 ];
 

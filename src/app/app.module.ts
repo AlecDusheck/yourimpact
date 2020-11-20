@@ -35,7 +35,7 @@ import { MapCardComponent } from './components/shared/map-card/map-card.componen
     SummaryComponent,
     StepperComponent,
     SourcesCardComponent,
-    MapCardComponent
+    MapCardComponent,
   ],
   imports: [
     CommonModule,

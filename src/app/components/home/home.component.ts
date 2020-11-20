@@ -19,8 +19,8 @@ export class HomeComponent {
     this.mapMarkers = [
       {
         label: 'Christianity',
-        lat: 31.779400,
-        long: 35.232071,
+        lat: 41.9028,
+        long: 12.4964,
       }
     ];
 
