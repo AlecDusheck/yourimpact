@@ -34,7 +34,7 @@ export const WORKS_CITED: WorksCited[] = [
     author: 'Sanders, E.P',
     title: 'St. Paul the Apostle',
     publication: 'Britannica',
-    dateAccessed: '19 Nov 2020',
+    dateAccessed: '12 Nov 2020',
     link: 'https://www.britannica.com/biography/Saint-Paul-the-Apostle',
     annotation: 'Gives background on Paul and how he spread Christianity to the Roman empire.',
   },
@@ -44,7 +44,7 @@ export const WORKS_CITED: WorksCited[] = [
     title: 'The Early Church',
     publication: 'Fortress Press',
     date: '1965',
-    dateAccessed: '19 Nov 2020',
+    dateAccessed: '12 Nov 2020',
     link: 'https://books.google.com/books?id=BFdslPRjIkcC',
     annotation: 'Explains how the Romans prosecuted Christians in their early days. Puts early hostility into contrast.',
   },
@@ -52,7 +52,7 @@ export const WORKS_CITED: WorksCited[] = [
     sourceType: SourceType.PRIMARY,
     link: 'https://books.google.com/books?id=2WuMyEzani8C',
     title: 'Church and State Through the Centuries: A Collection of Historic Documents',
-    dateAccessed: '19 Nov 2020',
+    dateAccessed: '12 Nov 2020',
     annotation: 'Source material that shows the adoption of Christianity in the Roman Empire'
   },
   {
@@ -75,7 +75,7 @@ export const WORKS_CITED: WorksCited[] = [
     sourceType: SourceType.ACADEMIC,
     link: 'https://www.ancient.eu/Ashoka_the_Great/',
     author: 'Mark, Joshua J.',
-    dateAccessed: '20 Nov 2020',
+    dateAccessed: '12 Nov 2020',
     publication: 'Ancient History Encyclopedia',
     title: 'Ashoka the Great',
     date: '24 Jun. 2020',
@@ -89,7 +89,7 @@ export const WORKS_CITED: WorksCited[] = [
     title: 'A Silk Road Legacy: The Spread of Buddhism and Islam',
     annotation: 'Shows how Buddhism and Islam spread along the Silk Road and provides context to the traders.',
     publication: 'Journal of World History',
-    dateAccessed: '20 Nov. 2020'
+    dateAccessed: '13 Nov. 2020'
   },
   /*{
     sourceType: SourceType.ACADEMIC,
@@ -113,7 +113,7 @@ export const WORKS_CITED: WorksCited[] = [
     sourceType: SourceType.PRIMARY,
     title: 'The Holy Bible',
     publication: 'BibleHub',
-    dateAccessed: '20 Nov 2020',
+    dateAccessed: '9 Nov 2020',
     link: 'https://biblehub.com/romans/1-1.htm',
     annotation: 'The bible shows Paul, an Apostle, telling the first-century world about Christianity and Jesus.',
   },
@@ -122,7 +122,7 @@ export const WORKS_CITED: WorksCited[] = [
     author: 'Cayasa, Virgil',
     title: 'Rock going into water',
     publication: 'Unsplash',
-    dateAccessed: '15 Nov. 2020',
+    dateAccessed: '18 Nov. 2020',
     link: 'https://unsplash.com/photos/I79JezfrbLk',
     annotation: 'A "ripple" representing the spread of something.',
   },
@@ -133,7 +133,7 @@ export const WORKS_CITED: WorksCited[] = [
     title: 'Origin And Development Of Buddhism',
     publication: 'Oxford University Press',
     date: 'Oct. 1934',
-    dateAccessed: '20 Nov 2020',
+    dateAccessed: '15 Nov 2020',
     annotation: 'Article explaining the early origins of Buddhism and how early message was spread.'
   },
   {
@@ -143,7 +143,7 @@ export const WORKS_CITED: WorksCited[] = [
     title: 'East and West',
     publication: 'Istituto Italiano per l\'Africa e l\'Oriente',
     date: 'Sept. 1958',
-    dateAccessed: '20 Nov 2020',
+    dateAccessed: '15 Nov 2020',
     annotation: 'Shows the connection between Buddhism and Aśoka.'
   },
   {
