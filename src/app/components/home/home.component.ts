@@ -38,6 +38,11 @@ export class HomeComponent {
       label: 'Buddhism',
       lat: 20.5937,
       long: 78.9629,
+    },
+    {
+      label: 'Islam',
+      lat: 21.3891,
+      long: 39.8579,
     }
   ];
 

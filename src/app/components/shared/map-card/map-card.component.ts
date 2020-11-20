@@ -15,6 +15,6 @@ export class MapCardComponent {
   @Input() mapMarkers: MapMarker[];
   @Input() title: string;
 
-  getDefaultLat = (): number => this.mapMarkers.length === 1 ? this.mapMarkers[0].lat : 34;
-  getDefaultLong = (): number => this.mapMarkers.length === 1 ? this.mapMarkers[0].long : 40;
+  getDefaultLat = (): number => this.mapMarkers.map(x => x.lat).reduce((a, b) => a + b, 0) / this.mapMarkers.length;
+  getDefaultLong = (): number => this.mapMarkers.map(x => x.long).reduce((a, b) => a + b, 0) / this.mapMarkers.length;
 }

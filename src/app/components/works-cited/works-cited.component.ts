@@ -81,6 +81,16 @@ export const WORKS_CITED: WorksCited[] = [
     date: '24 Jun. 2020',
     annotation: 'This article gives background on Ashoka and his conquests.',
   },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://www.jstor.org/stable/23011678',
+    author: 'Liu, Xinru',
+    date: 'Mar. 2011',
+    title: 'A Silk Road Legacy: The Spread of Buddhism and Islam',
+    annotation: 'Shows how Buddhism and Islam spread along the Silk Road and provides context to the traders.',
+    publication: 'Journal of World History',
+    dateAccessed: '20 Nov. 2020'
+  },
   /*{
     sourceType: SourceType.ACADEMIC,
     author: 'Rod-ari, Melody',

@@ -9,20 +9,18 @@ import {MapMarker} from '../shared/map-card/map-card.component';
 })
 export class ChristianityComponent implements OnInit {
 
-  mapMarkers: MapMarker[];
+  mapMarkers: MapMarker[] = [
+    {
+      label: 'Rome',
+      lat: 41.9028,
+      long: 12.4964,
+    }
+  ];
   sources = ['The Holy Bible', 'St. Paul the Apostle', 'The Early Church', 'Church and State Through the Centuries: A Collection of Historic Documents'];
 
   constructor(
     private readonly storyService: StoryService,
-  ) {
-    this.mapMarkers = [
-      {
-        label: 'Rome',
-        lat: 41.9028,
-        long: 12.4964,
-      }
-    ];
-  }
+  ) { }
 
   ngOnInit(): void {
     this.storyService.viewReligion('christianity');
