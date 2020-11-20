@@ -8,9 +8,3 @@ export class Utils {
      return value.substring(0, 1).toUpperCase() + value.substring(1, value.length);
   }
 }
-
-export interface MapMarker {
-  lat: number;
-  long: number;
-  label: string;
-}

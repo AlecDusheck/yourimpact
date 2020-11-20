@@ -1,5 +1,10 @@
 import {Component, Input} from '@angular/core';
-import {MapMarker} from '../../../../util';
+
+export interface MapMarker {
+  lat: number;
+  long: number;
+  label: string;
+}
 
 @Component({
   selector: 'app-map-card',

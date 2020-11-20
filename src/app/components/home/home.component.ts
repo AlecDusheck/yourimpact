@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {SimpleCardProps} from '../shared/simple-card/simple-card.component';
-import {MapMarker} from '../../../util';
 import {StoryService} from '../../services/story.service';
+import {MapMarker} from '../shared/map-card/map-card.component';
 
 @Component({
   selector: 'app-home',
