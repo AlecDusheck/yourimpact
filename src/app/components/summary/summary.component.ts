@@ -18,4 +18,12 @@ export class SummaryComponent implements OnInit {
   }
 
   getDiffAsString = () => this.storyService.findDiff().map(x => Utils.capitalize(x)).join(', ');
+
+  getLink = (): {link: string, title: string} => {
+    const diff = this.storyService.findDiff();
+    return {
+      link: '/' + diff[0],
+      title: Utils.capitalize(diff[0])
+    };
+  }
 }

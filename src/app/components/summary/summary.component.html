@@ -14,7 +14,7 @@
           Please independently explore <b>{{ getDiffAsString() }}</b> before skipping to the conclusion!
         </mdb-card-text>
 
-        <a routerLink="/" mdbBtn color="primary" mdbWavesEffect>Go Back</a>
+        <a routerLink="{{getLink().link}}" mdbBtn color="primary" mdbWavesEffect>Explore {{getLink().title}}</a>
       </mdb-card-body>
     </mdb-card>
   </ng-container>
