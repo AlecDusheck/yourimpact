@@ -1,7 +1,7 @@
 <div class="container">
   <h2 class="primary-page-header">Conclusion</h2>
   <app-stepper></app-stepper>
-  <ng-container>
+  <ng-container *ngIf="storyService.seenAll()">
     <div class="row">
       <div class="col-md-8 col-sm-12 religion-content">
         <h3 class="secondary-page-header">Conclusion 1</h3>
