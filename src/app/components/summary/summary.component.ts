@@ -9,6 +9,8 @@ import {Utils} from '../../../util';
 })
 export class SummaryComponent implements OnInit {
 
+  sources = ['Religion in the Ancient World'];
+
   constructor(
     public readonly storyService: StoryService,
   ) { }

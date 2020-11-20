@@ -2,7 +2,22 @@
   <h2 class="primary-page-header">Conclusion</h2>
   <app-stepper></app-stepper>
   <ng-container>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 religion-content">
+        <h3 class="secondary-page-header">Conclusion 1</h3>
+        <p>Asd AsdAsdAsdAsdA sdAsdAsdAsdAsdA sdAsd AsdAsdAsdAs dAsdAsdA sdAsdAsdAsdAsdAs dAsdAsd</p>
+        <p>Asd AsdAsdAsdAsdAsdAsdAsdAsdAsdA sdAsdAsdA sdAsdAs dAsdAsdAsdAsdAsdAsdAsd AsdAsdAsd</p>
+        <p>Asd AsdAsdAs dAsdAsdAsdA sdAsdAsdA sdAsdAsdAsdAsdAs dAsdAsdA sdAsdAsdA sdAsdAsdAsdAsd</p>
 
+        <h3 class="secondary-page-header">Conclusion 2</h3>
+        <p>Asd AsdAsdAsdAsdA sdAsdAsdAsdAsdA sdAsd AsdAsdAsdAs dAsdAsdA sdAsdAsdAsdAsdAs dAsdAsd</p>
+        <p>Asd AsdAsdAsdAsdAsdAsdAsdAsdAsdA sdAsdAsdA sdAsdAs dAsdAsdAsdAsdAsdAsdAsd AsdAsdAsd</p>
+        <p>Asd AsdAsdAs dAsdAsdAsdA sdAsdAsdA sdAsdAsdAsdAsdAs dAsdAsdA sdAsdAsdA sdAsdAsdAsdAsd</p>
+      </div>
+      <div class="col-md-4 d-sm-none d-md-block note-cards">
+        <app-sources-card [sources]="sources"></app-sources-card>
+      </div>
+    </div>
   </ng-container>
   <ng-container *ngIf="!storyService.seenAll()">
     <mdb-card>
