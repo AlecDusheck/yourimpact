@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {ReligionName, StoryService, TOTAL_RELIGIONS} from '../story.service';
-import {Utils} from '../../util';
+import {ReligionName, StoryService, TOTAL_RELIGIONS} from '../../../services/story.service';
+import {Utils} from '../../../../util';
 
 @Component({
   selector: 'app-stepper',

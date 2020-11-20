@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {StoryService} from '../story.service';
+import {StoryService} from '../../services/story.service';
 
 @Component({
   selector: 'app-islam',

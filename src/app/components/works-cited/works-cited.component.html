@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 class="primary-page-header">Works Cited</h2>
+  <div class="works-cited-content">
+    <h3 class="secondary-page-header">Background Sources:</h3>
+    <p *ngFor="let source of background" class="citation" [innerHTML]="buildCitation(source)"></p>
+
+    <h3 class="secondary-page-header">Academic Sources:</h3>
+    <p *ngFor="let source of academic" class="citation" [innerHTML]="buildCitation(source)"></p>
+
+    <h3 class="secondary-page-header">Primary Sources:</h3>
+    <p *ngFor="let source of primary" class="citation" [innerHTML]="buildCitation(source)"></p>
+
+    <h3 class="secondary-page-header">Image/Misc. Sources:</h3>
+    <p *ngFor="let source of image" class="citation" [innerHTML]="buildCitation(source)"></p>
+
+  </div>
+</div>

@@ -1,18 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import {SimpleCardProps} from '../simple-card/simple-card.component';
-import {MapMarker} from '../../util';
+import { Component } from '@angular/core';
+import {SimpleCardProps} from '../shared/simple-card/simple-card.component';
+import {MapMarker} from '../../../util';
+import {StoryService} from '../../services/story.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   public topReasons: SimpleCardProps[];
   public mapMarkers: MapMarker[];
 
-  constructor() {
+  constructor(
+    private readonly storyService: StoryService,
+  ) {
     this.mapMarkers = [
       {
         label: 'Christianity',
@@ -37,14 +40,12 @@ export class HomeComponent implements OnInit {
         content: 'Empires have played a critical role of enforcing religious practices.',
         imagePath: '/assets/home/empire.jpg',
       }
-
     ];
   }
 
-  log(l: string): void {
-    console.log(l);
-  }
-
-  ngOnInit(): void {
+  getLink = () => {
+    const diff = this.storyService.findDiff();
+    if (diff.length === 0) { return '/summary'; }
+    return '/' + diff[0];
   }
 }

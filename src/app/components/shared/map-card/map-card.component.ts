@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {MapMarker} from '../../util';
+import {MapMarker} from '../../../../util';
 
 @Component({
   selector: 'app-map-card',

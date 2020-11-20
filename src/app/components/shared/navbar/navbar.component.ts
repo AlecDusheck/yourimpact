@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
-import {TOTAL_RELIGIONS} from '../story.service';
-import {Utils} from '../../util';
+import {TOTAL_RELIGIONS} from '../../../services/story.service';
+import {Utils} from '../../../../util';
 
 @Component({
   selector: 'app-navbar',

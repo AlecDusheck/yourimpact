@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {StoryService} from '../story.service';
-import {MapMarker} from '../../util';
+import {StoryService} from '../../services/story.service';
+import {MapMarker} from '../../../util';
 
 @Component({
   selector: 'app-christianity',

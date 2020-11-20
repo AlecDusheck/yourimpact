@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {Utils} from '../util';
+import {Utils} from '../../util';
 
 export type ReligionName = ('christianity' | 'islam' | 'buddhism');
 
-export const TOTAL_RELIGIONS: ReligionName[] = ['christianity', 'islam', 'buddhism'];
+export const TOTAL_RELIGIONS: ReligionName[] = ['buddhism', 'christianity', 'islam'];
 
 @Injectable({
   providedIn: 'root'
