@@ -9,7 +9,7 @@ import {SimpleCardProps} from '../shared/simple-card/simple-card.component';
 })
 export class BuddhismComponent implements OnInit {
 
-  sources = ['Origin And Development Of Buddhism', 'East and West', 'Map of the Buddhist missions during the reign of Ashoka'];
+  sources = ['Origin And Development Of Buddhism', 'East and West', 'Map of the Buddhist missions during the reign of Ashoka', 'Ashoka the Great'];
   ashokaSpreadCard: SimpleCardProps = {
     imagePath: '/assets/buddhism/ashoka-map.png',
     content: 'This map shows how the Maurya Empire under the rule of Aśoka spread Buddhism',

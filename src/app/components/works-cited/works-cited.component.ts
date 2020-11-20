@@ -66,10 +66,20 @@ export const WORKS_CITED: WorksCited[] = [
   {
     sourceType: SourceType.IMAGE,
     link: 'https://www.thoughtco.com/along-the-silk-road-167077',
-    title: 'Image of silk road',
+    title: 'Image of the Silk Road',
     dateAccessed: '18 Nov 2020',
     publication: 'Corbis / Getty Image',
-    annotation: 'Image of the silk road for home screen depicting trade',
+    annotation: 'Image of The Silk Road for home screen depicting trade',
+  },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://www.ancient.eu/Ashoka_the_Great/',
+    author: 'Mark, Joshua J.',
+    dateAccessed: '20 Nov 2020',
+    publication: 'Ancient History Encyclopedia',
+    title: 'Ashoka the Great',
+    date: '24 Jun. 2020',
+    annotation: 'This article gives background on Ashoka and his conquests.',
   },
   /*{
     sourceType: SourceType.ACADEMIC,
