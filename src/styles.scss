@@ -23,3 +23,8 @@
 .note-cards mdb-card,app-sources-card,app-map-card:not(:first-of-type) {
   margin-top: 5vh;
 }
+
+.card-no-edge {
+  border-radius: 0 !important;
+  border: 0 !important;
+}
