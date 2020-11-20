@@ -3,7 +3,11 @@ import {Utils} from '../../util';
 
 export type ReligionName = ('christianity' | 'islam' | 'buddhism');
 
-export const TOTAL_RELIGIONS: ReligionName[] = ['buddhism', 'christianity', 'islam'];
+export const TOTAL_RELIGIONS: ReligionName[] = [
+  'buddhism',
+  'christianity',
+  'islam'
+];
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +22,6 @@ export class StoryService {
   viewReligion = (religion: ReligionName): void => {
     this.seenReligions.push(religion);
     this.seenReligions = this.seenReligions.filter(Utils.onlyUnique);
-
-    console.log('seen religions: ', this.seenReligions);
   }
 
   viewSummary = (): void => {

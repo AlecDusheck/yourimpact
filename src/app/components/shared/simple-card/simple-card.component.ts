@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 export interface SimpleCardProps {
-  imagePath: string;
-  title: string;
-  content: string;
+  imagePath?: string;
+  title?: string;
+  content?: string;
 }
 
 @Component({

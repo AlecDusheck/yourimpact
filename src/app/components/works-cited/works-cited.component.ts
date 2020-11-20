@@ -102,9 +102,37 @@ export const WORKS_CITED: WorksCited[] = [
     author: 'Cayasa, Virgil',
     title: 'Rock going into water',
     publication: 'Unsplash',
-    dateAccessed: '15 Nov 2020',
+    dateAccessed: '15 Nov. 2020',
     link: 'https://unsplash.com/photos/I79JezfrbLk',
     annotation: 'A "ripple" representing the spread of something.',
+  },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://www.jstor.org/stable/23965101',
+    author: 'Przyluski, Jean',
+    title: 'Origin And Development Of Buddhism',
+    publication: 'Oxford University Press',
+    date: 'Oct. 1934',
+    dateAccessed: '20 Nov 2020',
+    annotation: 'Article explaining the early origins of Buddhism and how early message was spread.'
+  },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://www.jstor.org/stable/29754012',
+    author: 'Murthy, H. V. S',
+    title: 'East and West',
+    publication: 'Istituto Italiano per l\'Africa e l\'Oriente',
+    date: 'Sept. 1958',
+    dateAccessed: '20 Nov 2020',
+    annotation: 'Shows the connection between Buddhism and Aśoka.'
+  },
+  {
+    sourceType: SourceType.PRIMARY,
+    link: 'https://en.wikipedia.org/wiki/History_of_Buddhism#/media/File:Asoka%CC%A0_Buddhist_Missions.png',
+    publication: 'Wikimedia Commons',
+    title: 'Map of the Buddhist missions during the reign of Ashoka',
+    dateAccessed: '20 Nov 2020',
+    annotation: 'Shows the spread of Buddhism under Aśoka under a primary source context.'
   }
 ];
 
