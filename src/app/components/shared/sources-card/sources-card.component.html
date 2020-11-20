@@ -5,7 +5,7 @@
     </mdb-card-title>
     <mdb-card-text>
       <ul>
-        <li *ngFor="let source of sources">{{source}}</li>
+        <li *ngFor="let source of convertedSourceText" [innerHTML]="source"></li>
       </ul>
     </mdb-card-text>
   </mdb-card-body>

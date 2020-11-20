@@ -10,7 +10,7 @@ import {MapMarker} from '../../../util';
 export class ChristianityComponent implements OnInit {
 
   mapMarkers: MapMarker[];
-  sources = ['test1'];
+  sources = ['Religion in the Ancient World'];
 
   constructor(
     private readonly storyService: StoryService,
@@ -27,5 +27,4 @@ export class ChristianityComponent implements OnInit {
   ngOnInit(): void {
     this.storyService.viewReligion('christianity');
   }
-
 }
