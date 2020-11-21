@@ -58,6 +58,8 @@ export class BuddhismComponent implements OnInit {
     'Map of the Buddhist missions during the reign of Ashoka',
     'Ashoka the Great',
     'A Silk Road Legacy: The Spread of Buddhism and Islam',
+    'World Heritage Monuments and Related Edifices in India',
+    'Yashini, East Gateway, Sanchi',
   ];
   ashokaSpreadCard: SimpleCardProps = {
     imagePath: '/assets/buddhism/ashoka-map.png',

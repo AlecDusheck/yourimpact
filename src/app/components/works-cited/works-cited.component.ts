@@ -91,6 +91,16 @@ export const WORKS_CITED: WorksCited[] = [
     publication: 'Journal of World History',
     dateAccessed: '13 Nov. 2020'
   },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://books.google.com/books?id=fg-lGID3WpQC',
+    title: 'World Heritage Monuments and Related Edifices in India',
+    dateAccessed: '20 Nov. 2020',
+    date: '2008',
+    publication: 'Algora Publishing',
+    author: 'Javid, Ali',
+    annotation: 'Gives a good background on Sanchi Stupa',
+  },
   /*{
     sourceType: SourceType.ACADEMIC,
     author: 'Rod-ari, Melody',
@@ -151,8 +161,25 @@ export const WORKS_CITED: WorksCited[] = [
     link: 'https://en.wikipedia.org/wiki/History_of_Buddhism#/media/File:Asoka%CC%A0_Buddhist_Missions.png',
     publication: 'Wikimedia Commons',
     title: 'Map of the Buddhist missions during the reign of Ashoka',
-    dateAccessed: '20 Nov 2020',
+    dateAccessed: '20 Nov. 2020',
     annotation: 'Shows the spread of Buddhism under Aśoka under a primary source context.'
+  },
+  {
+    sourceType: SourceType.PRIMARY,
+    link: 'https://en.wikipedia.org/wiki/Sanchi#/media/File:Yakshini_Sanchi_Stupa_1_Eastern_Gateway.jpg',
+    title: 'Yashini, East Gateway, Sanchi',
+    publication: 'Wikimedia Commons',
+    dateAccessed: '20 Nov. 2020',
+    author: 'Nagarjun',
+    date: '24 Aug. 2017',
+    annotation: 'Shows an stone carving at Sanchi Stupa',
+  },
+  {
+    sourceType: SourceType.PRIMARY,
+    link: 'https://quran.com/4/136?translations=131,149,22,95,19',
+    title: 'The Quran',
+    annotation: 'The Quran',
+    dateAccessed: '21 Nov. 2020',
   }
 ];
 
