@@ -177,8 +177,17 @@ export const WORKS_CITED: WorksCited[] = [
   {
     sourceType: SourceType.PRIMARY,
     link: 'https://quran.com/4/136?translations=131,149,22,95,19',
-    title: 'The Quran',
-    annotation: 'The Quran',
+    title: 'The Qur\'an',
+    annotation: 'The Qur\'an',
+    dateAccessed: '21 Nov. 2020',
+  },
+  {
+    sourceType: SourceType.ACADEMIC,
+    link: 'https://www.latimes.com/archives/la-xpm-2010-oct-24-la-oe-kaplan-20101024-story.html',
+    title: 'Eastern Islam and the ‘clash of civilizations’',
+    annotation: 'Article on the founding of islam',
+    author: 'Kaplan, Robert',
+    date: '24 Oct. 2020',
     dateAccessed: '21 Nov. 2020',
   }
 ];

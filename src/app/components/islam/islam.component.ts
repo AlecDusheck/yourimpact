@@ -8,7 +8,7 @@ import {StoryService} from '../../services/story.service';
 })
 export class IslamComponent implements OnInit {
 
-  sources = ['The Quran'];
+  sources = ['The Qur\'an', 'Eastern Islam and the ‘clash of civilizations’'];
 
   constructor(
     private readonly storyService: StoryService,

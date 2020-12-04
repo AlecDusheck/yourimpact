@@ -1,6 +1,6 @@
 <mdb-card>
   <div class="view rgba-white-slight waves-light" mdbWavesEffect>
-    <mdb-card-img src="{{props.imagePath}}" alt="Card image" *ngIf="props.imagePath"></mdb-card-img>
+    <mdb-card-img src="{{props.imagePath}}" alt="{{ (props.title || props.content) || 'Card Image' }}" *ngIf="props.imagePath"></mdb-card-img>
     <a>
       <div class="mask"></div>
     </a>
