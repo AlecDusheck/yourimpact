@@ -9,7 +9,10 @@ import {Utils} from '../../../util';
 })
 export class SummaryComponent implements OnInit {
 
-  sources = ['Religion in the Ancient World'];
+  sources = [
+    'Religion in the Ancient World',
+    'Religion and Overland Trade in Asia, 1000 BC to AD 1400',
+  ];
 
   constructor(
     public readonly storyService: StoryService,
