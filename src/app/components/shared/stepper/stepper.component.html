@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <ul class="stepper stepper-horizontal">
-      <ng-container *ngFor="let religion of religions">
+      <ng-container *ngFor="let religion of topics">
         <li [ngClass]="{completed: hasSeen(religion)}">
           <a [routerLink]="'/' + religion">
             <span class="circle">{{ findIndex(religion) }}</span>
@@ -11,7 +11,7 @@
       </ng-container>
       <li [ngClass]="{warning: !storyService.seenAll(), completed: storyService.seenSummaryComplete}">
         <a routerLink="/summary">
-          <span class="circle">{{ TOTAL_RELIGIONS.length + 1 }}</span>
+          <span class="circle">{{ TOTAL_TOPICS.length + 1 }}</span>
           <span class="label">Summary</span>
         </a>
       </li>

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import {SimpleCardProps} from '../shared/simple-card/simple-card.component';
-import {StoryService} from '../../services/story.service';
-import {MapMarker} from '../shared/map-card/map-card.component';
+import {SimpleCardProps} from "../simple-card/simple-card.component";
+import {StoryService} from "../../services/story.service";
 
 @Component({
   selector: 'app-home',
@@ -12,37 +11,19 @@ export class HomeComponent {
 
   public topReasons: SimpleCardProps[] = [
     {
-      title: 'Conflict',
-      content: 'Religion has a history of being spread by war. Even religions with incredibility peaceful scriptures have a history of war and battles.',
-      imagePath: '/assets/home/war.jpg',
+      title: 'Toxic Substances',
+      content: 'Toxic substances are all around us. They\'re in the food we eat, the water we drink, and the air we breathe.',
+      imagePath: '/assets/rect1.png',
     },
     {
-      title: 'Trade',
-      content: 'Ancient trade routes have a tendency to spread religion as well. There are many case studies of this occurring',
-      imagePath: '/assets/home/trade.jpg',
+      title: 'Food Choice',
+      content: 'When it comes to food, we are what we eat. It\'s important to be mindful of the choices we make and the impact they have on our health.',
+      imagePath: '/assets/rect2.png',
     },
     {
-      title: 'Empires',
-      content: 'Empires have played a critical role of enforcing religious practices.',
-      imagePath: '/assets/home/empire.jpg',
-    }
-  ];
-
-  public mapMarkers: MapMarker[] = [
-    {
-      label: 'Christianity',
-      lat: 41.9028,
-      long: 12.4964,
-    },
-    {
-      label: 'Buddhism',
-      lat: 20.5937,
-      long: 78.9629,
-    },
-    {
-      label: 'Islam',
-      lat: 21.3891,
-      long: 39.8579,
+      title: 'Environmental Impact',
+      content: 'When it comes to your personal environmental impact, there are many things you can do to reduce it.',
+      imagePath: '/assets/rect3.png',
     }
   ];
 

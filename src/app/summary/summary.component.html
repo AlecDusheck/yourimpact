@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 class="primary-page-header">Conclusion</h2>
+  <app-stepper></app-stepper>
+  <ng-container *ngIf="storyService.seenAll()">
+    <div class="row">
+      <p>When looking at environmental biology there many topics that relate to everyday life. From being aware and knowing how to read measurements of toxic substances, to calculating your environmental footprint, to being knowledgable and choosing foods that make sense for your goals, diet, health, and the environment, the study of environmental biology is one that everyone should have a basic understanding of.</p>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!storyService.seenAll()">
+    <mdb-card>
+      <mdb-card-body>
+        <mdb-card-title>
+          <h4>You're not ready yet!</h4>
+        </mdb-card-title>
+        <mdb-card-text>
+          Please independently explore <b>{{ getDiffAsString() }}</b> before skipping to the conclusion!
+        </mdb-card-text>
+
+        <a routerLink="{{getLink().link}}" mdbBtn color="primary" mdbWavesEffect>Explore {{getLink().title}}</a>
+      </mdb-card-body>
+    </mdb-card>
+  </ng-container>
+</div>

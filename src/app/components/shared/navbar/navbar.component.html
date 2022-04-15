@@ -1,23 +1,20 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
   <mdb-navbar-brand>
-    <a class="navbar-brand" routerLink="/">Alec Dusheck</a>
+    <a class="navbar-brand" routerLink="/">Your Impact</a>
   </mdb-navbar-brand>
   <links>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" [ngClass]="{active: this.route === '/'}">
         <a class="nav-link waves-light" routerLink="/" mdbWavesEffect>Introduction</a>
       </li>
-      <ng-container *ngFor="let religion of religions">
-        <li class="nav-item" [ngClass]="{active: this.route === '/' + religion}">
-          <a class="nav-link waves-light" [routerLink]="'/' + religion" mdbWavesEffect>{{ capitalize(religion) }}</a>
+      <ng-container *ngFor="let topic of topics">
+        <li class="nav-item" [ngClass]="{active: this.route === '/' + topic}">
+          <a class="nav-link waves-light" [routerLink]="'/' + topic" mdbWavesEffect>{{ capitalize(topic) }}</a>
         </li>
       </ng-container>
       <li class="nav-item" [ngClass]="{active: this.route === '/summary'}">
         <a class="nav-link waves-light" routerLink="/summary" mdbWavesEffect>Summary</a>
       </li>
     </ul>
-    <span class="navbar-text white-text font-weight-bold">
-            The spread of religion (250 BC – 750 AD)
-        </span>
   </links>
 </mdb-navbar>

@@ -1,13 +1,9 @@
-<mdb-card style="background-image: url('/assets/home/water-ripples.jpg'); background-position: center" class="card-no-edge">
+<mdb-card style="background-image: url('/assets/i3.png'); background-position: center; background-color: rgba(0,0,0,.8); background-blend-mode: multiply;" class="card-no-edge">
   <div class="text-white text-center py-5 px-4 my-5">
     <div>
-      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">Learn about the <b>surprisingly common</b> spread behind
-        three core <b>religions</b></h2>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">Want to reduce your <b>environmental impact</b>?</h2>
       <p class="mx-5 mb-5">
-        Religion today is well established in our society. However, the spread behind our religions wisdom is not. The
-        aim of this project is to expose
-        the common data-points connecting the spread and exposure given to three common religions: Christianity, Islam,
-        and Buddhism.
+        The purpose of this website is to highlight a few pressing matters which everyone should recognize in their life. The topic issue is toxic substances, whether it be in the food or air. The second topic is about food choice and how you can select foods that are best for you. The third topic is your personal environmental impact and how you can reduce your carbon footprint.
       </p>
       <a mdbBtn color="white" outline="true" class="waves-light" [routerLink]="getLink()" mdbWavesEffect>
         <mdb-icon fas icon="book-reader" class="left"></mdb-icon>
@@ -19,29 +15,13 @@
 <div class="container top-reasons">
   <div class="row text-header">
     <div class="col-12">
-      <h1 class="text-center">Top reasons for spread</h1>
-      <h5 class="text-center font-weight-light">Did you know: There are three common core reasons for the spread of
-        religion?</h5>
+      <h1 class="text-center">The key points</h1>
+      <h5 class="text-center font-weight-light">I've identified three for you. Click the items on the navbar to learn more.</h5>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-sm-12" *ngFor="let reason of topReasons">
       <app-simple-card [props]="reason"></app-simple-card>
     </div>
-  </div>
-</div>
-<div class="container map">
-  <div class="row text-header">
-    <div class="col-12">
-      <div class="row reasons-header">
-        <div class="col-12">
-          <h1 class="text-center">Origins</h1>
-          <h5 class="text-center font-weight-light">Where did these religions flourish?</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="map-box">
-    <app-map-card [mapMarkers]="mapMarkers"></app-map-card>
   </div>
 </div>

@@ -1,27 +1,27 @@
 import { Injectable } from '@angular/core';
 import {Utils} from '../../util';
 
-export type ReligionName = ('christianity' | 'islam' | 'buddhism');
+export type TopicName = ('toxins' | 'food' | 'environment');
 
-export const TOTAL_RELIGIONS: ReligionName[] = [
-  'buddhism',
-  'christianity',
-  'islam'
+export const TOTAL_TOPICS: TopicName[] = [
+  'toxins',
+  'food',
+  'environment'
 ];
 
 @Injectable({
   providedIn: 'root'
 })
 export class StoryService {
-  public seenReligions: ReligionName[] = [];
+  public seenTopics: TopicName[] = [];
   public seenSummaryComplete = false;
 
-  seenAll = (): boolean => TOTAL_RELIGIONS.length === this.seenReligions.length;
-  findDiff = (): ReligionName[] => TOTAL_RELIGIONS.filter(x => !this.seenReligions.includes(x));
+  seenAll = (): boolean => TOTAL_TOPICS.length === this.seenTopics.length;
+  findDiff = (): TopicName[] => TOTAL_TOPICS.filter(x => !this.seenTopics.includes(x));
 
-  viewReligion = (religion: ReligionName): void => {
-    this.seenReligions.push(religion);
-    this.seenReligions = this.seenReligions.filter(Utils.onlyUnique);
+  viewTopic = (topic: TopicName): void => {
+    this.seenTopics.push(topic);
+    this.seenTopics = this.seenTopics.filter(Utils.onlyUnique);
   }
 
   viewSummary = (): void => {

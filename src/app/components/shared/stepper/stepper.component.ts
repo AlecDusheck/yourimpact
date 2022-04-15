@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ReligionName, StoryService, TOTAL_RELIGIONS} from '../../../services/story.service';
+import {StoryService, TopicName, TOTAL_TOPICS} from '../../../services/story.service';
 import {Utils} from '../../../../util';
 
 @Component({
@@ -8,15 +8,15 @@ import {Utils} from '../../../../util';
   styleUrls: ['./stepper.component.scss']
 })
 export class StepperComponent {
-  public religions = TOTAL_RELIGIONS;
+  public topics = TOTAL_TOPICS;
 
   constructor(
     public readonly storyService: StoryService,
   ) { }
 
   capitalize = Utils.capitalize;
-  TOTAL_RELIGIONS = TOTAL_RELIGIONS;
+  TOTAL_TOPICS = TOTAL_TOPICS;
 
-  hasSeen = (religion: ReligionName): boolean => this.storyService.seenReligions.includes(religion);
-  findIndex = (religion: ReligionName): number => TOTAL_RELIGIONS.findIndex(x => x === religion) + 1;
+  hasSeen = (religion: TopicName): boolean => this.storyService.seenTopics.includes(religion);
+  findIndex = (religion: TopicName): number => TOTAL_TOPICS.findIndex(x => x === religion) + 1;
 }

@@ -1,37 +1,30 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
-import {WorksCitedComponent} from './components/works-cited/works-cited.component';
-import {ChristianityComponent} from './components/christianity/christianity.component';
-import {IslamComponent} from './components/islam/islam.component';
-import {BuddhismComponent} from './components/buddhism/buddhism.component';
-import {SummaryComponent} from './components/summary/summary.component';
-
-
+import {ToxinsComponent} from "./toxins/toxins.component";
+import {FoodComponent} from "./food/food.component";
+import {EnvironmentComponent} from "./environment/environment.component";
+import {SummaryComponent} from "./summary/summary.component";
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
   {
-    path: 'christianity',
-    component: ChristianityComponent
+    path: 'toxins',
+    component: ToxinsComponent
   },
   {
-    path: 'islam',
-    component: IslamComponent
+    path: 'food',
+    component: FoodComponent
   },
   {
-    path: 'buddhism',
-    component: BuddhismComponent
+    path: 'environment',
+    component: EnvironmentComponent
   },
   {
     path: 'summary',
     component: SummaryComponent
-  },
-  {
-    path: 'cited',
-    component: WorksCitedComponent
   },
   {
     path: '**',

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
-import {TOTAL_RELIGIONS} from '../../../services/story.service';
 import {Utils} from '../../../../util';
+import {TOTAL_TOPICS} from "../../../services/story.service";
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +11,7 @@ import {Utils} from '../../../../util';
 })
 export class NavbarComponent {
 
-  public religions = TOTAL_RELIGIONS;
+  public topics = TOTAL_TOPICS;
   public route = '';
 
   constructor(
